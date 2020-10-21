@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JyD-gY-65o">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Master-->
+        <scene sceneID="3sl-WA-2sU">
+            <objects>
+                <navigationController title="Master" id="Pdr-FR-dW7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="FKs-hG-iy7">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="RBU-vo-SF0" kind="relationship" relationship="rootViewController" id="ste-hn-IOu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5yr-oh-A1O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-630"/>
+        </scene>
+        <!--Master-->
+        <scene sceneID="86E-Ae-trY">
+            <objects>
+                <viewController id="RBU-vo-SF0" customClass="MasterViewController" customModule="UISplitViewController_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Aih-aa-cvv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1c-NK-pBI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="Vrl-9M-KZv" kind="embed" destinationCreationSelector="addSwiftUIView:" id="4jC-v9-Fcd"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yrw-LQ-7fI"/>
+                        <constraints>
+                            <constraint firstItem="A1c-NK-pBI" firstAttribute="trailing" secondItem="Yrw-LQ-7fI" secondAttribute="trailing" id="BCL-6N-xxW"/>
+                            <constraint firstItem="A1c-NK-pBI" firstAttribute="top" secondItem="Yrw-LQ-7fI" secondAttribute="top" id="Niv-xo-mdR"/>
+                            <constraint firstItem="Yrw-LQ-7fI" firstAttribute="bottom" secondItem="A1c-NK-pBI" secondAttribute="bottom" id="OYq-1q-P3y"/>
+                            <constraint firstItem="A1c-NK-pBI" firstAttribute="leading" secondItem="Yrw-LQ-7fI" secondAttribute="leading" id="x5c-Ad-J7u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Master" id="cSN-zh-bGI"/>
+                    <connections>
+                        <segue destination="vcK-rY-9JS" kind="showDetail" identifier="showDetailFromSwiftUI" id="kko-Da-T1H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dke-Kc-xxc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702.89855072463774" y="-624.10714285714278"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="dVH-Zz-XOh">
+            <objects>
+                <hostingController id="Vrl-9M-KZv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j2e-gj-HB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="-624"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="ZCA-gK-Te4">
+            <objects>
+                <viewController title="Detail" id="AZx-qR-Q7e" customClass="DetailViewController" customModule="UISplitViewController_Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C7W-fn-MGK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7b-fz-lUn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="ZPa-UV-7xP" kind="embed" destinationCreationSelector="addSwiftUIView:" id="BRH-Ln-ivN"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="99l-hs-1ud"/>
+                        <constraints>
+                            <constraint firstItem="s7b-fz-lUn" firstAttribute="leading" secondItem="99l-hs-1ud" secondAttribute="leading" id="Z6f-HS-wBK"/>
+                            <constraint firstItem="99l-hs-1ud" firstAttribute="bottom" secondItem="s7b-fz-lUn" secondAttribute="bottom" id="f4M-wi-fbJ"/>
+                            <constraint firstItem="s7b-fz-lUn" firstAttribute="top" secondItem="99l-hs-1ud" secondAttribute="top" id="nI5-Ei-1Nh"/>
+                            <constraint firstItem="99l-hs-1ud" firstAttribute="trailing" secondItem="s7b-fz-lUn" secondAttribute="trailing" id="wGv-8r-9qd"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Detail" id="fVR-nd-Cv8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lkm-gU-Fwf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="129"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="Z2U-1D-cYf">
+            <objects>
+                <hostingController id="ZPa-UV-7xP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FcB-Va-hSd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1541" y="135"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="1kK-rK-UiE">
+            <objects>
+                <splitViewController id="JyD-gY-65o" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="Pdr-FR-dW7" kind="relationship" relationship="masterViewController" id="UwS-6k-S93"/>
+                        <segue destination="vcK-rY-9JS" kind="relationship" relationship="detailViewController" id="2N9-CB-wmJ"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QRY-j7-uMc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-856" y="-330"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ixm-Se-d8Y">
+            <objects>
+                <navigationController id="vcK-rY-9JS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="joF-tL-MKN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AZx-qR-Q7e" kind="relationship" relationship="rootViewController" id="TUX-Lv-HeF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eb-PS-eol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="129"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kko-Da-T1H"/>
+    </inferredMetricsTieBreakers>
+</document>
