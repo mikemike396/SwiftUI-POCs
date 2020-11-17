@@ -14,8 +14,8 @@ struct ProgressHome: View {
 
     var body: some View {
         ZStack {
-            Color.yellow
-                .opacity(0.1)
+            Color.black
+                .opacity(0.2)
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
