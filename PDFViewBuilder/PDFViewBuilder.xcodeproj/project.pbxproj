@@ -16,7 +16,7 @@
 		1E7B7E9B2562DB83002EB53F /* PDFViewBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B7E9A2562DB83002EB53F /* PDFViewBuilderTests.swift */; };
 		1E7B7EA62562DB83002EB53F /* PDFViewBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7B7EA52562DB83002EB53F /* PDFViewBuilderUITests.swift */; };
 		1EF86C852564049C002C298E /* pdfTemplate.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1EF86C842564049C002C298E /* pdfTemplate.pdf */; };
-		1EF86C8D25641DF3002C298E /* Furlough FAQ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1EF86C8C25641DF3002C298E /* Furlough FAQ.pdf */; };
+		1EF86C8D25641DF3002C298E /* FurloughFAQ.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1EF86C8C25641DF3002C298E /* FurloughFAQ.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,7 @@
 		1E7B7EA52562DB83002EB53F /* PDFViewBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewBuilderUITests.swift; sourceTree = "<group>"; };
 		1E7B7EA72562DB83002EB53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF86C842564049C002C298E /* pdfTemplate.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = pdfTemplate.pdf; sourceTree = "<group>"; };
-		1EF86C8C25641DF3002C298E /* Furlough FAQ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Furlough FAQ.pdf"; sourceTree = "<group>"; };
+		1EF86C8C25641DF3002C298E /* FurloughFAQ.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = FurloughFAQ.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 				1E7B7E8E2562DB83002EB53F /* LaunchScreen.storyboard */,
 				1E7B7E912562DB83002EB53F /* Info.plist */,
 				1EF86C842564049C002C298E /* pdfTemplate.pdf */,
-				1EF86C8C25641DF3002C298E /* Furlough FAQ.pdf */,
+				1EF86C8C25641DF3002C298E /* FurloughFAQ.pdf */,
 			);
 			path = PDFViewBuilder;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EF86C8D25641DF3002C298E /* Furlough FAQ.pdf in Resources */,
+				1EF86C8D25641DF3002C298E /* FurloughFAQ.pdf in Resources */,
 				1E7B7E902562DB83002EB53F /* LaunchScreen.storyboard in Resources */,
 				1E7B7E8D2562DB83002EB53F /* Assets.xcassets in Resources */,
 				1E7B7E8B2562DB82002EB53F /* Main.storyboard in Resources */,

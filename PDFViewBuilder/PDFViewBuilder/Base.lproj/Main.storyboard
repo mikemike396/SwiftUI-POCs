@@ -22,6 +22,9 @@
                                     <constraint firstAttribute="width" constant="72" id="hIi-AZ-Nc1"/>
                                 </constraints>
                                 <state key="normal" title="Share PDF"/>
+                                <connections>
+                                    <action selector="sharePDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o2Q-I2-XTa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIq-3b-J0s">
                                 <rect key="frame" x="20" y="59" width="66" height="30"/>
@@ -29,6 +32,9 @@
                                     <constraint firstAttribute="width" constant="66" id="c6I-Rw-mru"/>
                                 </constraints>
                                 <state key="normal" title="Load PDF"/>
+                                <connections>
+                                    <action selector="loadPDF:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVq-bG-8AL"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lVZ-Gi-Wkm">
                                 <rect key="frame" x="0.0" y="97" width="414" height="765"/>
