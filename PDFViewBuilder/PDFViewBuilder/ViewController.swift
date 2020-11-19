@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var document = PDFDocument()
     var fileName = String()
     var pathToFile = URL(string: "")
-    var passedInFileName = "pdfTemplate"
+    var passedInFileName = "FurloughFAQ"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,11 @@ class ViewController: UIViewController {
         let vc = UIActivityViewController(activityItems: [pdfData], applicationActivities: nil)
         present(vc, animated: true, completion: nil)
     }
-    
+}
+
+//for editing/saving/displaying document
+extension ViewController
+{
     //ensures the file is in the right spot
     func showSavedPDF(url: URL, fileName: String)
     {
@@ -83,7 +87,6 @@ class ViewController: UIViewController {
         if document != PDFDocument() {
             pdfView.document = document
             
-            
             let numOfPages = document.pageCount
             for page in 0..<numOfPages
             {
@@ -116,4 +119,10 @@ class ViewController: UIViewController {
         
         return newAnnotation
     }
+}
+
+//for loading the document
+extension ViewController
+{
+    //need iCloud service to load files I believe and other project changes
 }
